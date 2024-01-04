@@ -1,0 +1,38 @@
+//
+//  ViewController.swift
+//  DZTMS
+//
+//  Created by Дмитрий Яновский on 4.01.24.
+//
+
+import UIKit
+
+
+
+class ViewController: UIViewController, DataDelegate {
+    func sendData(_ data: String) {
+        infoLabel.text = data
+        
+    }
+    
+    
+    @IBOutlet weak var infoLabel: UILabel!
+    
+    
+    @IBAction func openView(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "View2", bundle: nil)
+        let view2viewController = storyboard.instantiateViewController(withIdentifier: "view2viewController") as! view2viewController
+
+        view2viewController.delegate = self
+        view2viewController.modalPresentationStyle = .fullScreen
+        present(view2viewController, animated: true, completion: nil)
+        
+        
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+}
+
