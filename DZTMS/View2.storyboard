@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View 2view Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="view2viewController" id="Y6W-OH-hqX" customClass="view2viewController" customModule="DZTMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="252" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="внести данные" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kb8-1C-riK">
+                                <rect key="frame" x="20" y="249" width="353" height="34"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" verticalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="внести данные" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="26F-WY-cLs">
+                                <rect key="frame" x="20" y="303" width="353" height="34"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="внести данные" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t4F-s2-Kuf">
+                                <rect key="frame" x="20" y="357" width="353" height="34"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kVp-FE-GG9">
+                                <rect key="frame" x="100" y="533" width="193" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Записать"/>
+                                <connections>
+                                    <action selector="sendTo:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="VdG-Zq-NGm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="t4F-s2-Kuf" secondAttribute="trailing" constant="20" id="21g-du-TTW"/>
+                            <constraint firstItem="kVp-FE-GG9" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="100" id="3CA-Fd-pQJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="kVp-FE-GG9" secondAttribute="trailing" constant="100" id="3GH-bc-OFt"/>
+                            <constraint firstItem="t4F-s2-Kuf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="7kf-vJ-9jB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="26F-WY-cLs" secondAttribute="trailing" constant="20" id="M0G-7l-Zv7"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Kb8-1C-riK" secondAttribute="trailing" constant="20" id="MO3-zo-HQT"/>
+                            <constraint firstItem="26F-WY-cLs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Q0E-6f-swW"/>
+                            <constraint firstItem="t4F-s2-Kuf" firstAttribute="top" secondItem="26F-WY-cLs" secondAttribute="bottom" constant="20" id="UQD-bH-PH2"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="kVp-FE-GG9" secondAttribute="bottom" constant="250" id="WO8-v1-Ga7"/>
+                            <constraint firstItem="26F-WY-cLs" firstAttribute="top" secondItem="Kb8-1C-riK" secondAttribute="bottom" constant="20" id="mBJ-dG-sJ0"/>
+                            <constraint firstItem="Kb8-1C-riK" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="190" id="olJ-zN-wx8"/>
+                            <constraint firstItem="Kb8-1C-riK" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="tQc-mg-a4F"/>
+                            <constraint firstItem="kVp-FE-GG9" firstAttribute="top" secondItem="t4F-s2-Kuf" secondAttribute="bottom" constant="142" id="xJa-Vk-Y2X"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="text1" destination="Kb8-1C-riK" id="ttc-Kq-TSU"/>
+                        <outlet property="text2" destination="26F-WY-cLs" id="Kek-20-d2B"/>
+                        <outlet property="text3" destination="t4F-s2-Kuf" id="2Rl-mq-8qo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
